@@ -52,8 +52,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests()
                 .antMatchers("/login").anonymous()
-                .antMatchers("/rest/admin/*").access("hasAuthority('ROLE_ADMIN')")
-                .antMatchers("/rest/user/*").access("hasAuthority('ROLE_USER')");
+                .antMatchers("/api/admin/*").access("hasAuthority('ROLE_ADMIN')")
+                .antMatchers("/api/user/*").access("hasAuthority('ROLE_USER')");
     }
 
     // Необходимо для шифрования паролей

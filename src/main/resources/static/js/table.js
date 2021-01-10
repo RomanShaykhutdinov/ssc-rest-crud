@@ -5,7 +5,7 @@ function getAllUsers() {
     $("#table").empty();
     $.ajax({
         type: 'POST',
-        url: '/rest/admin/users',
+        url: '/api/admin/users',
         timeout: 3000,
         success: function (data) {
             console.log(data);
@@ -44,7 +44,7 @@ function getUser() {
     $("#userTable").empty();
     $.ajax({
         type: 'POST',
-        url: '/rest/user/getUser',
+        url: '/api/user/getUser',
         timeout: 3000,
         error: function() {
             $('#forUser').hide();
@@ -85,7 +85,7 @@ $(document).on("click", ".addUser", function () {
     $('.formAddUser #newRole').val('');
     $.ajax({
         type: 'POST',
-        url: '/rest/admin/addUser',
+        url: '/api/admin/addUser',
         data: user,
         timeout: 3000,
         success: function () {
@@ -111,7 +111,7 @@ $(document).on("click", ".editUser", function () {
     let formData = $(".formEditUser").serializeArray();
     $.ajax({
         type: 'POST',
-        url: '/rest/admin/update',
+        url: '/api/admin/update',
         data: formData,
         timeout: 1000,
         success: function () {
@@ -127,7 +127,7 @@ $(document).on("click", ".delete", function () {
     $(document).on("click", ".deleteUser", function () {
         $.ajax({
             type: 'POST',
-            url: '/rest/admin/remove',
+            url: '/api/admin/remove',
             data: {id: $('#delId').val()},
             timeout: 500,
             success: function () {

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/rest/*")
+@RequestMapping("/api/*")
 public class AdminController {
 
     private final UserService userService;
