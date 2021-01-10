@@ -1,4 +1,4 @@
-package springBoot.web.model;
+package servingweb.model;
 
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;

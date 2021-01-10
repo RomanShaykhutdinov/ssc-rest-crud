@@ -1,10 +1,10 @@
-package springBoot.web.controller;
+package servingweb.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import springBoot.web.model.User;
-import springBoot.web.service.UserService;
+import servingweb.model.User;
+import servingweb.service.UserService;
 
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;

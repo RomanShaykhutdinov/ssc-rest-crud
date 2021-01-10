@@ -1,10 +1,8 @@
-package springBoot.web.service;
+package servingweb.service;
 
-import springBoot.web.model.Role;
-import springBoot.web.model.User;
+import servingweb.model.User;
 
 import java.util.List;
-import java.util.Set;
 
 public interface UserService {
     List<User> getAllUsers();

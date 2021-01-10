@@ -1,8 +1,8 @@
-package springBoot.web.repositories;
+package servingweb.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import springBoot.web.model.User;
+import servingweb.model.User;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {

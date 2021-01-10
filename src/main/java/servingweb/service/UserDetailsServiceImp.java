@@ -1,12 +1,12 @@
-package springBoot.web.service;
+package servingweb.service;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import springBoot.web.model.User;
-import springBoot.web.repositories.UserRepository;
+import servingweb.model.User;
+import servingweb.repositories.UserRepository;
 
 @Service
 public class UserDetailsServiceImp implements UserDetailsService {

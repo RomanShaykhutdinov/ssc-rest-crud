@@ -1,11 +1,11 @@
-package springBoot.web.service;
+package servingweb.service;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import springBoot.web.model.Role;
-import springBoot.web.repositories.UserRepository;
-import springBoot.web.model.User;
+import servingweb.model.Role;
+import servingweb.repositories.UserRepository;
+import servingweb.model.User;
 
 import java.util.*;
 
