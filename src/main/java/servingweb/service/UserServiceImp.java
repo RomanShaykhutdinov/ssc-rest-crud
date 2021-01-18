@@ -34,7 +34,6 @@ public class UserServiceImp implements UserService {
     public void saveUser(User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         String role = user.getRole();
-        System.out.println(role);
         if (role.contains("USER") && role.contains("ADMIN")) {
             Set<Role> roles = new HashSet<>();
             roles.add(new Role(1L, "ROLE_ADMIN"));
